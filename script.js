@@ -158,7 +158,8 @@ function resetTimer() {
   stopTimer()
   isSession = true;
   timerLabel.text('Session')
-
+  beep.pause()
+  beep.currentTime = 0
   sessionTime = 25
   breakTime = 5
   timerTime = sessionTime
